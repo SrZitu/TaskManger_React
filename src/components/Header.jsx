@@ -1,24 +1,27 @@
-import PropTypes from 'prop-types';
-import Buttons from './Buttons';
-const Header = ({title}) => {
+import PropTypes from "prop-types";
+import Buttons from "./Buttons";
+const Header = ({ title }) => {
+  const buttonClick = () => {
+    console.log("button clicked");
+  };
   return (
-    <header className='header'>
+    <header className="header">
       <h2>{title}</h2>
-     <Buttons color="green" text="add"></Buttons>
+      <Buttons onClick={buttonClick} color="green" text="add"></Buttons>
     </header>
-  )
-}
-Header.defaultProps={
-    title:"Task Tracker"
-}
+  );
+};
+Header.defaultProps = {
+  title: "Task Tracker",
+};
 //prop type can be fixed and validate like this
-Header.propTypes={
-  title:PropTypes.string.isRequired,
-}
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 // const headingStyle={
 //   color:'red',
 //   background:'yellow'
 // }
 
-export default Header
+export default Header;
