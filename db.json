@@ -16,7 +16,13 @@
       "id": 3,
       "text": "Dev Meeting",
       "day": "march 26th at 1:30pm",
-      "reminder": false
+      "reminder": true
+    },
+    {
+      "text": "Learning React Js",
+      "day": "15th april",
+      "reminder": true,
+      "id": 4
     }
   ]
 }
